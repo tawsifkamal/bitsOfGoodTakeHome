@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+}
+
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 5rem 0;
+}
+
+input[type=text] {
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  margin-bottom: 1rem;
+}
+
+input[type=date] {
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  border: 0;
+  border-bottom: 1px solid #a1a1a1;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  background-color: #00a8ff;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 0.2rem #00a8ff solid;
+  padding: 0.8rem;
+  background-color: white;
+  color: #00a8ff;
+}
+
+.App {
+  /* text */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+.App > div {
+  /* Layout */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.tag-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.row {
+  margin: 2rem 0;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.first-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input[type=date] {
+  flex: 1;
+}
+
+input.item-name {
+  flex: 1;
+}
+
+label.item-name {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.center-inside {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-inside > button {
+  min-width: 50%;
+}
+
+.tags-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tags-row > * {
+  flex: 1;
+}
+
+.tag-name {
+  margin: 0.5rem 1.5rem;
+  padding: 0rem 1.0rem;
+  border-radius: 0.5rem;
+  background-color: #ebb7b7;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tag-name > p {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tag-name > p > * {
+  padding: 0rem 0.25rem;
+}
+
+.tag-name > p > .icon {
+  display: none;
+}
+
+.tag-name:hover .icon {
+  display: block;
+}
+
+.todoList-item {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.clear-tags-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+input.checkbox {
+  width: 4rem;
+  height: 4rem;
+  align-self: center;
+  margin: 0rem 4rem 0rem 1rem;
+}
+
+input.checkbox:checked + .middle > .title {
+  text-decoration: line-through;
+  color: rgb(82, 82, 82);
+}
+
+.middle {
+  flex: 4;
+}
+
+.date {
+  flex: 1;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
